@@ -1,6 +1,6 @@
 module Mint
   class Compiler
-    def compile(node : Ast::Try) : String
+    def _compile(node : Ast::Try) : String
       body = node.statements.map_with_index do |statement, index|
         prefix =
           case
